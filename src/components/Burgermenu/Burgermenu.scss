@@ -1,0 +1,16 @@
+.burgermenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  color: red;
+  gap: 5px;
+ 
+  &__part{
+    transition: transform 0.2s;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
