@@ -1,3 +1,5 @@
+@import "../../App.scss";
+
 .burgermenu {
   display: flex;
   justify-content: center;
@@ -5,6 +7,10 @@
   width: max-content;
   color: red;
   gap: 5px;
+
+  @include onTablet {
+    display: none;
+  }
  
   &__part{
     transition: transform 0.2s;

@@ -1,10 +1,25 @@
-.nav {
+@import "../../App.scss";
+
+.navigation {
   display: flex;
   box-sizing: border-box;
   padding: 0 20px 0 12px;
   justify-content: space-between;
   align-items: center;
   height: 50px;
-  background-color: #67AEFC;
   color: #fff;
+  max-width: 1170px;
+  margin: auto;
+
+  @include onTablet {
+    height: 70px;
+  }
+
+  @include onDesktop {
+    height: 95px;
+  }
+}
+
+.container {
+  background-color: $standartBlue;
 }

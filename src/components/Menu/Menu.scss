@@ -1,6 +1,12 @@
+@import "../../App.scss";
+
 .menu {
-  background-color: #67AEFC;
+  background-color: $standartBlue;
   z-index: 1;
+
+  @include onTablet {
+    display: none;
+  }
 
   &__list {
     margin: 0;

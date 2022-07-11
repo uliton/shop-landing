@@ -1,11 +1,5 @@
-html {
-  font-family: 'Montserrat', sans-serif;
-}
+@import "./styles/reset";
+@import "./styles/normalize";
+@import "./styles/variables";
+@import "./styles/mixins";
 
-body, p {
-  margin: 0;
-}
-
-.starter {
-  font-size: 28px;
-}
