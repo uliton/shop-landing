@@ -1,0 +1,73 @@
+@import '../../../App.scss';
+
+.footer {
+  background-color: $standartBlue;
+  padding: 46px 0 152px;
+
+  @include onTablet {
+    padding: 75px 0 80px;
+  }
+
+  @include onDesktop {
+    padding: 126px 0 80px;
+  }
+}
+
+.container {
+  @include onTablet {
+    margin: auto;
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 90px;
+  }
+
+  @include onDesktop {
+    width: 800px;
+    margin-bottom: 134px;
+  }
+}
+
+.logo {
+  margin-bottom: 25px;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 68px;
+}
+
+.networks {
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  margin-bottom: 40px;
+
+  @include onTablet {
+    position: absolute;
+    top: 50%;
+  }
+}
+
+.mail {
+  display: block;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 140%;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.rights {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  line-height: 140%;
+  text-align: center;
+  color: #fff;
+}

@@ -1,0 +1,61 @@
+@import '../../../App.scss';
+
+.container {
+  position: relative;
+  display: block;
+  flex-direction: row;
+  max-width: 1170px;
+  margin: auto;
+  padding: 40px 20px 70px;
+  margin-bottom: 60px;
+}
+
+.buttons {
+  position: absolute;
+  bottom: -6%;
+  left: calc(51% - 100px);
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.prev {
+  box-sizing: border-box;
+  height: 60px;
+  width: 60px;
+  border: 2px solid $standartBlue;
+  border-radius: 15px;
+
+  &:hover {
+    background-color: $standartBlue;
+
+    .img {
+      opacity: 0;
+    }
+  }
+}
+
+.next {
+  height: 60px;
+  width: 60px;
+  border: 2px solid $standartBlue;
+  border-radius: 15px;
+
+  &:hover {
+    background-color: $standartBlue;
+
+    .img {
+      opacity: 0;
+    }
+  }
+}

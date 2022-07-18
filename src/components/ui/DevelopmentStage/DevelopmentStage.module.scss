@@ -1,0 +1,30 @@
+@import '../../../App.scss';
+
+.stage {
+  box-sizing: border-box;
+  width: 320px;
+  height: 615px;
+  border: 2px solid $standartBlue;
+  border-radius: 15px;
+  padding: 0 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.subtitle {
+  margin-top: 27px;
+}
+
+.description {
+  font-size: 17px;
+  line-height: 175%;
+}
+
+.image {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin: auto 0;
+}

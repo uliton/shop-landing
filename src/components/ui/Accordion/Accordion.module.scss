@@ -1,0 +1,68 @@
+@import '../../../App.scss';
+
+.accordion {
+  margin: auto;
+  width: 335px;
+
+  @include onTablet {
+    width: 730px;
+  }
+
+  @include onDesktop {
+    width: 1160px;
+  }
+}
+
+.item {
+  margin-bottom: 10px;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 24px 18px;
+}
+
+.title {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background-color: #fff;
+  border: none;
+  color: brown;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0 17px;
+  margin-right: 25px;
+}
+
+.content {
+  border-left: 1px solid #000;
+  padding-left: 10px;
+
+}
+
+.hide {
+  color: green;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0,5 cubic-bezier(0, 1, 0, 1);
+}
+
+.show {
+  height: auto;
+  font-size: 17px;
+  line-height: 175%;
+  padding: 0 40px 40px 25px;
+  transition: all 0,5 cubic-bezier(1, 0, 1, 0);
+}

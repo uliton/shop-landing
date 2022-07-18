@@ -1,0 +1,24 @@
+@import '../../../App.scss';
+
+.button {
+  width: 100%;
+  box-sizing: border-box;
+  height: 60px;
+  background: $buttonGreen;
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #fff;
+
+  &:hover {
+    cursor: pointer;
+    border: 2px solid $standartBlue;
+  }
+
+  &:active {
+    background: $standartBlue;
+  }
+}

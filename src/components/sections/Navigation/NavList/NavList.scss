@@ -1,0 +1,71 @@
+@import "../../../../App.scss";
+
+.nav {
+  
+  &__list {
+    list-style: none;
+    display: none;
+    align-items: center;
+
+    @include onTablet {
+      display: flex;
+    }
+  }
+
+  &__item {
+    margin-right: 25px;
+
+    @include onDesktop {
+      margin-right: 40px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  
+  &__link {
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+
+    &:hover {
+      color: #fff;
+    }
+
+    &:hover::after {
+      content: '';
+      position: absolute;
+      display: block;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: #fff;
+    }
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 40px;
+    border-radius: 5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border: none;
+    background: $buttonGreen;
+
+    &:hover {
+      cursor: pointer;
+      border: 2px solid #fff;
+    }
+
+    &:active {
+      background: #fff;
+      color: $standartBlue;
+    }
+  }
+}

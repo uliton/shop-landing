@@ -1,0 +1,26 @@
+@import "../../../../App.scss";
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  transition: transform 0.2s;
+  
+
+  &:hover {
+    transform: scale(1.01);
+  }
+
+  &__image {
+    height: 35px;
+
+    @include onTablet {
+      height: 48px;
+    }
+
+    @include onDesktop {
+      height: 60px;
+    }
+  }
+}

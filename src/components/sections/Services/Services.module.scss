@@ -1,0 +1,28 @@
+@import "../../../App.scss";
+
+.container {
+  background-color: $lightBlue;
+  padding: 16px 20px 20px;
+
+  @include onTablet {
+    padding: 50px 20px 50px;
+  }
+
+  @include onDesktop {
+    padding: 120px 0 120px;
+  }
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 16px;
+  background-color: $lightBlue;
+
+  @include onTablet {
+    margin-bottom: 50px;
+  }
+
+  @include onDesktop {
+    margin-bottom: 100px;
+  }
+}

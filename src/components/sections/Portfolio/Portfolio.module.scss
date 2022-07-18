@@ -1,0 +1,39 @@
+@import '../../../App.scss';
+
+.container {
+  background-color: $lightBlue;
+  padding-bottom: 120px;
+
+  @include onTablet {
+    padding-top: 50px;
+    padding-bottom: 120px;
+  }
+}
+
+.title {
+  display: block;
+  text-align: center;
+  padding: 23px 23px 14px;
+  margin: 0;
+
+  @include onTablet {
+    margin-bottom: 25px;
+  }
+
+  @include onDesktop {
+    margin-bottom: 50px;
+  }
+}
+
+.projects {
+  z-index: -3;
+  display: grid;
+  grid-template-columns: min-content;
+  justify-content: center;
+  row-gap: 30px;
+  column-gap: 20px;
+
+  @include onTablet {
+    grid-template-columns: min-content min-content;
+  }
+}

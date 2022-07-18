@@ -1,0 +1,52 @@
+@import '../../../App.scss';
+
+.portfolioitem {
+  position: relative;
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  // width: 100%;
+  height: 266px;
+  border-radius: 15px;
+
+  @include onDesktop {
+    height: 448px;
+  }
+
+  &:hover {
+    opacity: 0;
+  }
+}
+
+.hover {
+  width: 334px;
+  height: 265px;
+  background-color: $standartBlue;
+  border-radius: 27px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+
+  @include onDesktop {
+    width: 570px;
+    height: 447px;
+  }
+}
+
+.title {
+  font-weight: 800;
+  font-size: 17px;
+  line-height: 27px;
+  text-transform: uppercase;
+}
+
+.description {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 175%;
+}

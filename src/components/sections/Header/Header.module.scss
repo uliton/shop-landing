@@ -1,0 +1,102 @@
+@import '../../../App.scss';
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5px;
+  max-width: 1170px;
+  margin: auto;
+  margin-bottom: 180px;
+
+  @include onTablet {
+    flex-direction: row-reverse;
+  }
+}
+
+.images {
+  display: flex;
+  background-image: url(../../../images/header/bag.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 365px;
+
+  @include onTablet {
+    padding: 50px;
+    margin-top: 30px;
+    width: 100%;
+  }
+
+  @include onDesktop {
+    padding: 100px;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+
+  @include onTablet {
+    width: 550px;
+  }
+}
+
+.title {
+  font-weight: 800;
+  font-size: 27px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #484848;
+  margin: 0 20px 20px;
+
+  @include onTablet {
+    font-weight: 800;
+    font-size: 38px;
+    line-height: 125%;
+    color: #484848;
+    width: 450px;
+    margin: 90px 8px 15px;
+  }
+
+  @include onDesktop {
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 125%;
+    color: #484848;
+    width: 590px;
+    margin: 170px 0 20px;
+  }
+}
+
+.description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #000;
+  margin: 0 20px 30px;
+
+  @include onTablet {
+    font-size: 16px;
+    line-height: 140%;
+    margin: 0 8px 58px;
+    width: 390px;
+  }
+
+  @include onDesktop {
+    font-size: 16px;
+    line-height: 140%;
+    margin: 0 0 58px;
+    width: 390px;
+  }
+}
+
+.button {
+  padding: 0 20px;
+  margin-bottom: 50px;
+
+  @include onTablet {
+    box-sizing: border-box;
+    width: 270px;
+  }
+}

@@ -1,0 +1,79 @@
+@import '../../../App.scss';
+
+.container {
+  position: relative;
+  box-sizing: border-box;
+  max-width: 1180px;
+  margin: auto;
+  padding: 20px;
+
+  @include onTablet {
+    padding-bottom: 90px;
+  }
+
+  @include onDesktop {
+    padding: 200px 0 150px;
+  }
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 260px;
+
+  @include onTablet {
+    text-align: left;
+    margin-bottom: 35px;
+  }
+
+  @include onDesktop {
+    margin-bottom: 50px;
+  }
+}
+
+.description {
+  max-width: 620px;
+  margin: 0 auto 30px;
+
+  @include onTablet {
+    margin: 0 0 35px;
+  }
+  
+  @include onDesktop {
+    margin-bottom: 45px;
+  }
+}
+
+.button {
+  margin-bottom: 50px;
+  @include onTablet {
+    box-sizing: border-box;
+    width: 270px;
+  }
+}
+
+.image {
+  position: absolute;
+  top: 15%;
+  left: 0;
+  width: 100%;
+  height: 220px;
+  background-image: url(../../../images/moreInfo/moreInfo.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  @include onTablet {
+    z-index: -1;
+    max-width: 1050px;
+    height: 280px;
+    top: 20%;
+    left: 25%;
+  }
+
+  @include onDesktop {
+    max-width: 1170px;
+    height: 450px;
+    top: 27%;
+    left: 24%;
+  }
+}
